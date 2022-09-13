@@ -70,3 +70,6 @@ function update(){
     ctx.putImageData(new ImageData(nob.buf,nob.width,nob.height),0,0);
 }
 update();
+document.addEventListener("keydown", e=>{
+    if(e.key.toLowerCase()=="r")location.reload();
+});
